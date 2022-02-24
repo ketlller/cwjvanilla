@@ -12,7 +12,7 @@ async function login() {
       user = await Moralis.authenticate({ signingMessage: "Welcome to CodeWithJoe" })
       console.log(user)
       console.log(user.get('ethAddress'))
-     
+     populate()
    } catch(error) {
      console.log(error)
    }
